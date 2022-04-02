@@ -1,4 +1,4 @@
-# Flippy Slime Friends ![slime](assets/fs2res/pack/slime.png)
+# Flippy Slime Friends
 Isometric puzzle game <br>
 Sequel to Flippy Slime (https://github.com/foreignguymike/Sandbox) <br>
 
