@@ -19,11 +19,11 @@ To activate a tile, simply move to it.<br/>
 Use the Arrow buttons to move around.<br/>
 Try to finish the levels in the least amount of moves.<br/>
 Some levels have more than one slime. Slimes will block each other.<br/>
-<h3>Keyboard controls</h3>
+<h3>Keyboard Controls (You can also use the on screen buttons)</h3>
 Arrow keys - move<br/>
 S - switch slime <br/>
 D - drop bubble <br/>
-Enter - go forward<br/>
+Enter - go next<br/>
 Escape - go back<br/>
 R - Restart<br/>
 <h3>Tile mechanics</h3>
@@ -40,17 +40,6 @@ Finish Tile - All tiles must be activated and all Finish Tiles must be occupied 
 </body>
 
 <script>
-function handleMouseDown(evt) {
-  //evt.preventDefault();
-  //evt.stopPropagation();
-  //window.focus();
-}
-
-function handleMouseUp(evt) {
-  //evt.preventDefault();
-  //evt.stopPropagation();
-}
-
 // if canvas is focused, stop moving around
 function handleKey(event) {
   var canvas = document.querySelector('canvas');
@@ -61,8 +50,5 @@ function handleKey(event) {
     }	
   }
 }
-//document.addEventListener('contextmenu', event => event.preventDefault());
-//document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
-//document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
 </script>
 </html>
