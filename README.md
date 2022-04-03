@@ -1,8 +1,7 @@
 # Flippy Slime Friends 
-Player it here! (https://foreignguymike.github.io/)
+Play it here! https://foreignguymike.github.io/
 
 Isometric puzzle game <br>
-Sequel to Flippy Slime (https://github.com/foreignguymike/Sandbox) <br>
 
 ![meadow](https://i.imgur.com/dG1As3s.png)
 
