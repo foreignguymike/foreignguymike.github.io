@@ -7,25 +7,62 @@
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body onkeydown="handleKey(event)" style="margin:0;padding:0;background-color:#ddd;font-family:Arial;line-height:1.6;">
 
-<div align="center" id="embed-html"></div>
+<div style="padding:20px; background-color:#bbb" align="center" id="embed-html"></div>
 <script type="text/javascript" src="html/html.nocache.js"></script>
+
+<div style="margin: auto; width:760px; max-width:760px; padding:20px;">
+<h3>How to play</h3>
+You must activate all of the tiles to finish the level.<br/>
+To activate a tile, simply move to it.<br/>
+Use the Arrow buttons to move around.<br/>
+Try to finish the levels in the least amount of moves.<br/>
+Some levels have more than one slime. Slimes will block each other.<br/>
+<h3>Keyboard controls</h3>
+Arrow keys - move<br/>
+S - switch slime <br/>
+D - drop bubble <br/>
+Enter - go forward<br/>
+Escape - go back<br/>
+R - Restart<br/>
+<h3>Tile mechanics</h3>
+Arrow - Moves the player in the direction the arrow is facing.<br/>
+Super Jump - Makes the player jump forward 2 tiles.<br/>
+Ice - Makes the player continue moving in the same direction.<br/>
+Block - Invalid tile. (Mostly used to stop ice)
+Moving Tile - Has a set path and set interval*.<br/>
+Bubble - Allows free movement. Must land on a valid tile.<br/>
+Teleport - 2 way portal. In one side, out the other, and vice-versa.<br/>
+Finish Tile - All tiles must be activated and all Finish Tiles must be occupied by a slime.<br/>
+</div>
+
 </body>
 
 <script>
 function handleMouseDown(evt) {
-  evt.preventDefault();
-  evt.stopPropagation();
-  window.focus();
+  //evt.preventDefault();
+  //evt.stopPropagation();
+  //window.focus();
 }
 
 function handleMouseUp(evt) {
-  evt.preventDefault();
-  evt.stopPropagation();
+  //evt.preventDefault();
+  //evt.stopPropagation();
 }
-document.addEventListener('contextmenu', event => event.preventDefault());
-document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
-document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+
+// if canvas is focused, stop moving around
+function handleKey(event) {
+  var canvas = document.querySelector('canvas');
+  canvas.tabIndex = 1;
+  if (canvas == document.activeElement) {
+    if (event.keyCode >= 37 && event.keyCode <= 40) {
+  	  event.preventDefault();
+    }	
+  }
+}
+//document.addEventListener('contextmenu', event => event.preventDefault());
+//document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
+//document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
 </script>
 </html>
