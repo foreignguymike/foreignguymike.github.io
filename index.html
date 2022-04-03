@@ -7,35 +7,40 @@
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
-<body onkeydown="handleKey(event)" onmousedown="handleMouse(event)" style="margin:0;padding:0;background-color:#ddd;font-family:Arial;line-height:1.6;">
+<body onkeydown="handleKey(event)" onmousedown="handleMouse(event)" style="margin:0;padding:0;background-color:#ddd;font-family:Arial;line-height:1.4;">
 
 <div style="padding:20px; background-color:#bbb" align="center" id="embed-html"></div>
 <script type="text/javascript" src="html/html.nocache.js"></script>
 
-<div style="margin: auto; width:760px; max-width:760px; padding:20px;">
+<div style="margin: auto; width:760px; max-width:760px; padding:20px;white-space:pre;">
 Click on the game to lock the page.
-<h3>How to play</h3>
-You must activate all of the tiles to finish the level.<br/>
-To activate a tile, simply move to it.<br/>
-Use the Arrow buttons to move around.<br/>
-Try to finish the levels in the least amount of moves.<br/>
-Some levels have more than one slime. Slimes will block each other.<br/>
-<h3>Keyboard Controls (You can also use the on screen buttons)</h3>
-Arrow keys - move<br/>
-S - switch slime <br/>
-D - drop bubble <br/>
-Enter - go next<br/>
-Escape - go back<br/>
-R - Restart<br/>
-<h3>Tile mechanics</h3>
-Arrow - Moves the player in the direction the arrow is facing.<br/>
-Super Jump - Makes the player jump forward 2 tiles.<br/>
-Ice - Makes the player continue moving in the same direction.<br/>
+
+<div style="font-size:24px;">How to play</div>
+You must activate all of the tiles to finish the level.
+To activate a tile, simply move to it.
+Use the Arrow buttons to move around.
+Try to finish the levels in the least amount of moves.
+Some levels have more than one slime. Slimes will block each other.
+
+<div style="font-size:24px;">Keyboard Controls (You can also use the on screen buttons)</div>
+Arrow keys - move
+S - switch slime
+D - drop bubble
+Enter - go next
+Escape - go back
+R - Restart
+
+<div style="font-size:24px;">Tile mechanics</div>
+Arrow - Moves the player in the direction the arrow is facing.
+Super Jump - Makes the player jump forward 2 tiles.
+Ice - Makes the player continue moving in the same direction.
 Block - Invalid tile. (Mostly used to stop ice)
-Moving Tile - Has a set path and set interval*.<br/>
-Bubble - Allows free movement. Must land on a valid tile.<br/>
-Teleport - 2 way portal. In one side, out the other, and vice-versa.<br/>
-Finish Tile - All tiles must be activated and all Finish Tiles must be occupied by a slime.<br/>
+Moving Tile - Has a set path and set interval*.
+Bubble - Allows free movement. Must land on a valid tile.
+Teleport - 2 way portal. In one side, out the other, and vice-versa.
+Finish Tile - All tiles must be activated and all Finish Tiles must be occupied by a slime.
+
+*They can be delayed though
 </div>
 
 </body>
