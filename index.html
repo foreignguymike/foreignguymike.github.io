@@ -13,6 +13,8 @@
 <script type="text/javascript" src="html/html.nocache.js"></script>
 
 <div style="margin: auto; width:760px; max-width:760px; padding:20px;white-space:pre;">
+<button style="padding:5px;" onclick="goFullscreen()">Go Fullscreen!</button>
+
 Click on the game to lock the page.
 
 <div style="font-size:24px;">How to play</div>
@@ -46,6 +48,18 @@ Finish Tile - All tiles must be activated and all Finish Tiles must be occupied 
 </body>
 
 <script>
+function goFullscreen() {
+  var canvas = document.querySelector('canvas');
+  canvas.style.setProperty("image-rendering", "optimizeSpeed");             /* Older versions of FF          */
+  canvas.style.setProperty("image-rendering", "-moz-crisp-edges");          /* FF 6.0+                       */
+  canvas.style.setProperty("image-rendering", "-webkit-optimize-contrast"); /* Safari                        */
+  canvas.style.setProperty("image-rendering", "-o-crisp-edges");            /* OS X & Windows Opera (12.02+) */
+  canvas.style.setProperty("image-rendering", "pixelated");                 /* Awesome future-browsers       */
+  canvas.style.setProperty("-ms-interpolation-mode", "nearest-neighbor");   /* IE                            */
+  canvas.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+  canvas.mozRequestFullScreen();
+}
+
 function handleMouse(event) {
   var canvas = document.querySelector('canvas');
   canvas.tabIndex = 1;
