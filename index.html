@@ -3,7 +3,7 @@
 <head>
 	<title>libGDX application</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta id="gameViewport" name="viewport" content="width=device-width initial-scale=1">
+	<meta id="gameViewport" name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -14,6 +14,7 @@
 
 <div style="margin: auto; width:760px; max-width:760px; padding:20px;white-space:pre;">
 <button style="padding:5px;" onclick="goFullscreen()">Go Fullscreen!</button>
+<a href="fs/index.html">click</a>
 
 Click on the game to lock the page.
 
@@ -48,8 +49,32 @@ Finish Tile - All tiles must be activated and all Finish Tiles must be occupied 
 </body>
 
 <script>
+
+function resize_canvas() {
+  canvas_2d.restore();
+  canvas_2d.save();
+
+  var current_ratio = canvas_2d.canvas.width / canvas_2d.canvas.height;
+  var new_ratio = window.innerWidth / window.innerHeight;
+  var xratio = window.innerWidth / canvas_2d.canvas.width;
+  var yratio = window.innerHeight / canvas_2d.canvas.height;
+
+  if (current_ratio > new_ratio) screen_size_ratio = xratio;
+  else screen_size_ratio = yratio;
+  if (screen_size_ratio > 1) screen_size_ratio = 1;
+
+  canvas_2d.scale (screen_size_ratio, screen_size_ratio);
+}
+
+function touch_start (event) {
+  var touch = event.changedTouches;
+  var x = Math.floor (touch[0].clientX / screen_size_ratio);
+  var y = Math.floor (touch[0].clientY / screen_size_ratio);
+}
+
 function goFullscreen() {
   var canvas = document.querySelector('canvas');
+  canvas.addEventListener("touchstart", touch_start,  false);
   canvas.style.setProperty("image-rendering", "optimizeSpeed");             /* Older versions of FF          */
   canvas.style.setProperty("image-rendering", "-moz-crisp-edges");          /* FF 6.0+                       */
   canvas.style.setProperty("image-rendering", "-webkit-optimize-contrast"); /* Safari                        */
