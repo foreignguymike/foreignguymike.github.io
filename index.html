@@ -72,16 +72,18 @@ function touch_start (event) {
 }
 
 function goFullscreen() {
+/*
   var canvas = document.querySelector('canvas');
   canvas.addEventListener("touchstart", touch_start,  false);
-  canvas.style.setProperty("image-rendering", "optimizeSpeed");             /* Older versions of FF          */
-  canvas.style.setProperty("image-rendering", "-moz-crisp-edges");          /* FF 6.0+                       */
-  canvas.style.setProperty("image-rendering", "-webkit-optimize-contrast"); /* Safari                        */
-  canvas.style.setProperty("image-rendering", "-o-crisp-edges");            /* OS X & Windows Opera (12.02+) */
-  canvas.style.setProperty("image-rendering", "pixelated");                 /* Awesome future-browsers       */
-  canvas.style.setProperty("-ms-interpolation-mode", "nearest-neighbor");   /* IE                            */
+  canvas.style.setProperty("image-rendering", "optimizeSpeed");
+  canvas.style.setProperty("image-rendering", "-moz-crisp-edges");
+  canvas.style.setProperty("image-rendering", "-webkit-optimize-contrast");
+  canvas.style.setProperty("image-rendering", "-o-crisp-edges");
+  canvas.style.setProperty("image-rendering", "pixelated");
+  canvas.style.setProperty("-ms-interpolation-mode", "nearest-neighbor");
   canvas.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
   canvas.mozRequestFullScreen();
+  */
 }
 
 function handleMouse(event) {
