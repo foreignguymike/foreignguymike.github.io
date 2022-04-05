@@ -1,7 +1,9 @@
 # Flippy Slime Friends 
 Play it here! https://foreignguymike.github.io/
 
-Isometric puzzle game <br>
+Isometric puzzle game
+
+Source code for the game is here. https://github.com/foreignguymike/flippyslimefriends_java
 
 ![meadow](https://i.imgur.com/dG1As3s.png)
 
