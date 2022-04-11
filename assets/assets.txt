@@ -1,6 +1,6 @@
 d:assets:assets:0:application/unknown:1
-t:fs2.atlas:fs2-8ea2556b2075f3067d630d96fd9364f0.atlas:12637:application/unknown:1
-i:fs2.png:fs2-8dece4197da4ad61d8f05d4d7eb8f9f8.png:42623:image/png:1
+t:fs2.atlas:fs2-c9fd592f08749caf35a97662f47f7310.atlas:13729:application/unknown:1
+i:fs2.png:fs2-0678c1990d97a3da834d958ce8d59c59.png:51279:image/png:1
 i:slime.png:slime-2f8f08b86167323cf1a16ef4ea385282.png:289:image/png:1
 t:com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl:particles.fragment-b90524761fdf09b0a836056d590c30b8.glsl:820:application/unknown:1
 t:com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl:particles.vertex-f25b8b2fae10b9bfa09bfdd484923148.glsl:2886:application/unknown:1
