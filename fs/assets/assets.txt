@@ -1,6 +1,14 @@
 d:assets:assets:0:application/unknown:1
-t:fs2.atlas:fs2-bbfff33b3314df98b6ad8e73cd5fe6e3.atlas:23777:application/unknown:1
-i:fs2.png:fs2-79860a687c356d9dab3d1b3908d5769d.png:73308:image/png:1
+t:fs2.atlas:fs2-4909d9bebeff39e4d5277b0bf9d66df2.atlas:23957:application/unknown:1
+i:fs2.png:fs2-7bf95eb065ceaa362b0e6e147720ff78.png:73851:image/png:1
+d:music:music:0:application/unknown:1
+a:music/calm.mp3:music/calm-003baa346a273eb77fe08b58e18fb048.mp3:505030:audio/mpeg:1
+a:music/mystery.mp3:music/mystery-b8ed7f71e223cb346152c0b90519a665.mp3:446047:audio/mpeg:1
+d:sfx:sfx:0:application/unknown:1
+a:sfx/activate.wav:sfx/activate-0e32a0eb834a97a7f1151cf73b626f93.wav:85356:audio/x-wav:1
+a:sfx/complete.wav:sfx/complete-b531d4c3ff5fe071d0b7abeb4e602b5a.wav:203780:audio/x-wav:1
+a:sfx/deactivate.wav:sfx/deactivate-5d4bfd7adb0d0833ce66e2cb78d6e3d8.wav:23040:audio/x-wav:1
+a:sfx/select.wav:sfx/select-b2909b201f8378a5afba12f757aff961.wav:125520:audio/x-wav:1
 i:slime.png:slime-2f8f08b86167323cf1a16ef4ea385282.png:289:image/png:1
 t:com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl:particles.fragment-b90524761fdf09b0a836056d590c30b8.glsl:820:application/unknown:1
 t:com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl:particles.vertex-f25b8b2fae10b9bfa09bfdd484923148.glsl:2886:application/unknown:1
