@@ -1,6 +1,6 @@
 d:assets:assets:0:application/unknown:1
-t:fs2.atlas:fs2-530c91a3344acea6eff887935bc20f14.atlas:29449:application/unknown:1
-i:fs2.png:fs2-ca53a05748f7183ee0215877a0d80863.png:77721:image/png:1
+t:fs2.atlas:fs2-793e241c60ad9ef1af8989e30a078007.atlas:28782:application/unknown:1
+i:fs2.png:fs2-176d6a24a9a1a4737a1121495d3b867b.png:69994:image/png:1
 d:music:music:0:application/unknown:1
 a:music/calm.mp3:music/calm-003baa346a273eb77fe08b58e18fb048.mp3:505030:audio/mpeg:1
 a:music/mystery.mp3:music/mystery-b8ed7f71e223cb346152c0b90519a665.mp3:446047:audio/mpeg:1
