@@ -3,9 +3,10 @@ t:fs2.atlas:fs2-d0ba3c510b46181d3670d3485359bbab.atlas:29198:application/unknown
 i:fs2.png:fs2-4f2ba129b93e12e7c6b91f064217d912.png:70606:image/png:1
 d:music:music:0:application/unknown:1
 a:music/calm.mp3:music/calm-003baa346a273eb77fe08b58e18fb048.mp3:505030:audio/mpeg:1
-a:music/mystery.mp3:music/mystery-b8ed7f71e223cb346152c0b90519a665.mp3:446047:audio/mpeg:1
-a:music/ruins.mp3:music/ruins-3d73ea61aa3f2e9bfbe748acf24f0815.mp3:1182952:audio/mpeg:1
+a:music/meadow.mp3:music/meadow-f1d9d0d006bd7c667853ba45abe9d60b.mp3:1281172:audio/mpeg:1
+a:music/ruins.mp3:music/ruins-0a2aaa836d310ed50528fd1ef3b41d6f.mp3:1182952:audio/mpeg:1
 a:music/tundra.mp3:music/tundra-0dd89bc7f57b4f92960fc7f486179180.mp3:927997:audio/mpeg:1
+a:music/undersea.mp3:music/undersea-1fbd0cac6f120e649a8e5f4762bd6b8e.mp3:1105630:audio/mpeg:1
 d:sfx:sfx:0:application/unknown:1
 a:sfx/activate.wav:sfx/activate-0e32a0eb834a97a7f1151cf73b626f93.wav:85356:audio/x-wav:1
 a:sfx/complete.wav:sfx/complete-b531d4c3ff5fe071d0b7abeb4e602b5a.wav:203780:audio/x-wav:1
