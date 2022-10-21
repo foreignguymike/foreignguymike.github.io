@@ -2,7 +2,7 @@ d:assets:assets:0:application/unknown:1
 t:fs2.atlas:fs2-4af1c268b31bff0a20ad0598851720f4.atlas:29209:application/unknown:1
 i:fs2.png:fs2-a3b9a0eac707bbea512c0af7a2b69985.png:71732:image/png:1
 d:music:music:0:application/unknown:1
-a:music/challenge.mp3:music/challenge-e63f253486a404586db16acac28251a9.mp3:1432299:audio/mpeg:1
+a:music/challenge.mp3:music/challenge-2781bcd7868f7a8262ca86eff92cee24.mp3:1432299:audio/mpeg:1
 a:music/matrix.mp3:music/matrix-fc0847b6f7ec4e1d730eaa584ff43512.mp3:1283395:audio/mpeg:1
 a:music/meadow.mp3:music/meadow-653637d1ab2b0d85b8c7750905c26f2f.mp3:1283395:audio/mpeg:1
 a:music/ruins.mp3:music/ruins-c5c628cbd99e8dae99853a642d3433a2.mp3:1185148:audio/mpeg:1
