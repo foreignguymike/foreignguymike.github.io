@@ -11,7 +11,7 @@ const fsfUrls = [
 
 var aCurrentIndex = -1;
 const aUrls = [
-	["imgs/a1.png", "imgs/a1.png"]
+	["imgs/a1.png", "imgs/a1.mp4"]
 ];
 
 function changeImageFSF(index) {

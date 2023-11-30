@@ -18,6 +18,8 @@ html {
 	display: table;
 	margin: auto;
 	background-color: var(--cbg);
+	background-image: url("/bg.png");
+	background-repeat: space;
 	height: 100%;
 	font-family: 'Roboto';
 	color: #333;
