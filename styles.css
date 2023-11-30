@@ -13,6 +13,8 @@ html {
 	display: table;
 	margin: auto;
 	background-color: var(--cbg);
+	background-image: url("bg.png");
+	background-repeat: space;
 	height: 100%;
 	font-family: 'Roboto';
 }
@@ -108,12 +110,13 @@ body {
 	object-fit: contain;
     cursor: pointer;
 	border-radius: 4px;
-	transition: 0.1s;
+	transition: 0.3s;
 }
 
 .active-thumbnail {
-	outline: 3px solid #fff;
-	outline-offset: -3px;
+	filter: brightness(50%);
+	/*outline: 3px solid #fff;
+	outline-offset: -3px;*/
 }
 
 .game-button {
@@ -134,10 +137,10 @@ body {
 
 .game-button:disabled,
 .game-button[disabled] {
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
-  cursor: not-allowed;
+	border: 1px solid #999999;
+	background-color: #cccccc;
+	color: #666666;
+	cursor: not-allowed;
 }
 
 .game-button:hover:enabled {
@@ -146,22 +149,20 @@ body {
 
 /////////////////////////////
 
-.scroll-container {
-}
-
 ::-webkit-scrollbar {
-  height: 10px;
+	width: 10px
+	height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--cbg);
-  border-radius: 5px;
+	background: var(--cbg);
+	border-radius: 5px;
 }
 
-:hover::-webkit-scrollbar {
-  height: 10px;
+hover::-webkit-scrollbar {
+	height: 10px;
 }
 
-:hover::-webkit-scrollbar-thumb {
-  background: #CB8175;
+hover::-webkit-scrollbar-thumb {
+	background: #CB8175;
 }
