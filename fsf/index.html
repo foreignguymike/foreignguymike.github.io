@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Flippy Slime Friends</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta id="gameViewport" name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="html/html.nocache.js"></script>
+		<script defer src="script.js"></script>
+	</head>
+
+	<body onkeydown="handleKey(event)" onmousedown="handleMouse(event)">
+
+		<div class="header">Flippy Slime Friends</div>
+		<div id="embed-html" align="center"></div>
+		<div style="height: 30px"></div>
+
+		<div class="game-box">
+			
+			<!--Note: To preview all customization options, click the title of the game 5 times in a row.-->
+			<!--<a href="fs"><button style="padding:5px;">Go Fullscreen!</button></a>-->
+
+			<div class="list-header">How to play</div>
+			<p>
+You must activate all of the tiles to finish the level.
+To activate a tile, simply move to it.
+Use the Arrow buttons to move around.
+Try to finish the levels in the least amount of moves.
+Some levels have more than one slime. Slimes will block each other.</p>
+
+			<div class="list-header">Keyboard Controls (You can also use the on screen buttons)</div>
+			<p class="exact">Arrow keys - move
+S - switch slime
+D - drop bubble
+Enter - go next
+Escape - go back
+R - Restart</p>
+
+			<div class="list-header">Tile mechanics</div>
+			<p class="exact">Arrow - Moves the player in the direction the arrow is facing.
+Super Jump - Makes the player jump forward 2 tiles.
+Ice - Makes the player continue moving in the same direction.
+Block - Invalid tile. (Mostly used to stop ice)
+Moving Tile - Has a set path and set interval.
+Bubble - Allows free movement. Must land on a valid tile.
+Teleport - 2 way portal. In one side, out the other, and vice-versa.
+Finish Tile - All tiles must be activated and all Finish Tiles must be occupied by a slime.</p>
+			
+		</div>
+
+	</body>
+</html>

@@ -1,103 +1,59 @@
 <!doctype html>
 <html>
-<head>
-	<title>libGDX application</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta id="gameViewport" name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
-	<link href="styles.css" rel="stylesheet" type="text/css">
-</head>
-
-<body onkeydown="handleKey(event)" onmousedown="handleMouse(event)" style="margin:0;padding:0;background-color:#ddd;font-family:Arial;line-height:1.4;">
-
-<div style="padding:20px; background-color:#bbb" align="center" id="embed-html"></div>
-<script type="text/javascript" src="html/html.nocache.js"></script>
-
-<div style="margin: auto; width:760px; max-width:760px; padding:20px;white-space:pre;">
-<div style="font-size:24px;">Flippy Slime Friends</div>
-Note: To preview all customization options, click the title of the game 5 times in a row.
-
-<a href="fs"><button style="padding:5px;">Go Fullscreen!</button></a>
-
-<div style="font-size:24px;">How to play</div>
-You must activate all of the tiles to finish the level.
-To activate a tile, simply move to it.
-Use the Arrow buttons to move around.
-Try to finish the levels in the least amount of moves.
-Some levels have more than one slime. Slimes will block each other.
-
-<div style="font-size:24px;">Keyboard Controls (You can also use the on screen buttons)</div>
-Arrow keys - move
-S - switch slime
-D - drop bubble
-Enter - go next
-Escape - go back
-R - Restart
-
-<div style="font-size:24px;">Tile mechanics</div>
-Arrow - Moves the player in the direction the arrow is facing.
-Super Jump - Makes the player jump forward 2 tiles.
-Ice - Makes the player continue moving in the same direction.
-Block - Invalid tile. (Mostly used to stop ice)
-Moving Tile - Has a set path and set interval.
-Bubble - Allows free movement. Must land on a valid tile.
-Teleport - 2 way portal. In one side, out the other, and vice-versa.
-Finish Tile - All tiles must be activated and all Finish Tiles must be occupied by a slime.
-</div>
-
-</body>
-
-<script>
-
-function resize_canvas() {
-  canvas_2d.restore();
-  canvas_2d.save();
-
-  var current_ratio = canvas_2d.canvas.width / canvas_2d.canvas.height;
-  var new_ratio = window.innerWidth / window.innerHeight;
-  var xratio = window.innerWidth / canvas_2d.canvas.width;
-  var yratio = window.innerHeight / canvas_2d.canvas.height;
-
-  if (current_ratio > new_ratio) screen_size_ratio = xratio;
-  else screen_size_ratio = yratio;
-  if (screen_size_ratio > 1) screen_size_ratio = 1;
-
-  canvas_2d.scale (screen_size_ratio, screen_size_ratio);
-}
-
-function touch_start (event) {
-  var touch = event.changedTouches;
-  var x = Math.floor (touch[0].clientX / screen_size_ratio);
-  var y = Math.floor (touch[0].clientY / screen_size_ratio);
-}
-
-function goFullscreen() {
-/*
-  var canvas = document.querySelector('canvas');
-  canvas.addEventListener("touchstart", touch_start,  false);
-  canvas.style.setProperty("image-rendering", "optimizeSpeed");
-  canvas.style.setProperty("image-rendering", "-moz-crisp-edges");
-  canvas.style.setProperty("image-rendering", "-webkit-optimize-contrast");
-  canvas.style.setProperty("image-rendering", "-o-crisp-edges");
-  canvas.style.setProperty("image-rendering", "pixelated");
-  canvas.style.setProperty("-ms-interpolation-mode", "nearest-neighbor");
-  canvas.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
-  canvas.mozRequestFullScreen();
-  */
-}
-
-function handleMouse(event) {
-  var canvas = document.querySelector('canvas');
-  canvas.tabIndex = 1;
-}
-
-// if canvas is focused, stop moving around
-function handleKey(event) {
-  var canvas = document.querySelector('canvas');
-  if (canvas == document.activeElement) {
-    if (event.keyCode >= 37 && event.keyCode <= 40) {
-  	  event.preventDefault();
-    }	
-  }
-}
-</script>
+	<head>
+		<title>Game Projects</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="styles.css" type="text/css">
+		<link rel="shortcut icon" href="#">
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<div class="header">GAME PROJECTS</div>
+		<div class="sub-header">Puzzle game programming hobby.</div>
+		
+		<div class="game-box">
+			<div class="media-box">
+				<div class="gallery-container">
+					<div id="fsfMainImageContainer" class="main-image-container">
+						<video id="fsfMainVideo" width="480" height="270" class="main-video" loop><source id="fsfMainVideoSource"></video>
+						<img id="fsfMainImage" class="main-image">
+					</div>
+					<div class="thumbnail-container scroll-container">
+						<div id="fsfThumbnails" class="thumbnails"></div>
+					</div>
+				</div>
+			</div>
+			<div class="info-box">
+				<div class="game-title"><a class="game-title" href="fsf/index.html">Flippy Slime Friends</a></div>
+				<p>Simple but challenging tile-based puzzle game. Activate all of the tiles in the each level. There are 5 distinct themes, each with their own unique mechanics. Play over 200 levels and 5 extremely difficult challenge levels.</p>
+				<p>Try to finish each level in the least amount of moves to earn diamonds. Use those diamonds to customize your slime.</p>
+				<br/>
+				<a href="fsf/index.html"><button class="game-button">PLAY</button></a>
+				<a href="https://github.com/foreignguymike/flippyslimefriends_java"><button class="game-button">GITHUB</button></a>
+			</div>
+		</div>
+		
+		<div class="game-box">
+			<div class="media-box">
+				<div class="gallery-container">
+					<div id="fsfMainImageContainer" class="main-image-container">
+						<video id="aMainVideo" width="480" height="270" class="main-video" loop><source id="aMainVideoSource"></video>
+						<img id="aMainImage" class="main-image">
+					</div>
+					<div class="thumbnail-container scroll-container">
+						<div id="aThumbnails" class="thumbnails"></div>
+					</div>
+				</div>
+			</div>
+			<div class="info-box">
+				<div class="game-title">Artifact</div>
+				<p>Coming soon&trade;.</p>
+				<br/>
+				<a href="#"><button class="game-button" disabled>PLAY</button></a>
+			</div>
+		</div>
+		
+	</body>
 </html>
