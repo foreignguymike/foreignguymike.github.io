@@ -1,0 +1,14 @@
+20todusk.atlas
+20todusk.png
+fonts/m5x716.fnt
+fonts/m5x716.png
+fonts/vcr20.fnt
+fonts/vcr20.png
+music/darksideoffate.ogg
+sfx/2x.wav
+sfx/grave.wav
+sfx/hit.wav
+sfx/select.wav
+sfx/shift.wav
+sfx/soul.wav
+sfx/submit.wav
