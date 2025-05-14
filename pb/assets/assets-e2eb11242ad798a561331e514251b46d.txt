@@ -1,0 +1,17 @@
+fonts/m5x716.fnt
+fonts/m5x716.png
+fonts/vcr20.fnt
+fonts/vcr20.png
+music/fieldcoaster.mp3
+oss325.atlas
+oss325.png
+sfx/FreeSFX/Retro Electronic Burst StereoUP 04.wav
+sfx/FreeSFX/Retro Event Acute 11.wav
+sfx/FreeSFX/Retro Event StereoUP 02.wav
+sfx/FreeSFX/Retro Event UI 01.wav
+sfx/FreeSFX/Retro Event UI 13.wav
+sfx/FreeSFX/Retro Explosion Swooshes 04.wav
+sfx/FreeSFX/Retro FootStep 03.wav
+sfx/FreeSFX/Retro Impact Metal 05.wav
+sfx/click.ogg
+sfx/metal-pole-hit-83057.wav
